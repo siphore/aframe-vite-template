@@ -8,8 +8,6 @@
     <a-scene background="color: #000000">
       <a-assets>
         <a-asset-item id="penguin" src="./assets/models/penguin.glb" />
-        <a-asset-item id="space" src="./assets/models/space.glb" />
-        <a-asset-item id="tower" src="./assets/models/tower.glb" />
         <a-asset-item id="skybox" src="./assets/models/skybox.glb" />
         <a-asset-item id="platform" src="./assets/models/platform.glb" />
       </a-assets>
@@ -17,13 +15,13 @@
       <a-entity gltf-model="#skybox"></a-entity>
       <a-entity
         gltf-model="#penguin"
-        scale="20 20 20"
-        position="25 6.628 4"
+        scale="5 5 5"
+        position="0 2.199 -24"
       ></a-entity>
-      <a-entity gltf-model="#platform" position="25 0 0"></a-entity>
-      <a-entity gltf-model="#platform" position="50 0 0"></a-entity>
-      <a-entity gltf-model="#platform" position="75 0 0"></a-entity>
-      <a-entity gltf-model="#platform" position="100 0 0"></a-entity>
+      <a-entity gltf-model="#platform" position="0 0 -25"></a-entity>
+      <a-entity gltf-model="#platform" position="0 0 -50"></a-entity>
+      <a-entity gltf-model="#platform" position="0 0 -75"></a-entity>
+      <a-entity gltf-model="#platform" position="0 0 -100"></a-entity>
     </a-scene>
   </body>
 </html>
