@@ -7,23 +7,23 @@
   <body>
     <a-scene background="color: #000000">
       <a-assets>
-        <a-asset-item id="necklace" src="./assets/models/necklace/scene.gltf" />
-        <a-asset-item id="phoenix" src="./assets/models/phoenix/scene.gltf" />
         <a-asset-item id="penguin" src="./assets/models/penguin.glb" />
         <a-asset-item id="space" src="./assets/models/space.glb" />
+        <a-asset-item id="tower" src="./assets/models/tower.glb" />
+        <a-asset-item id="skybox" src="./assets/models/skybox.glb" />
+        <a-asset-item id="platform" src="./assets/models/platform.glb" />
       </a-assets>
+
+      <a-entity gltf-model="#skybox"></a-entity>
       <a-entity
-        gltf-model="#necklace"
-        position="-0.477 -1.007 -1.093"
-        scale="10 10 10"
-        rotation="-45 0 0"
+        gltf-model="#penguin"
+        scale="20 20 20"
+        position="25 6.628 4"
       ></a-entity>
-      <a-entity gltf-model="#penguin" scale="20 20 20"></a-entity>
-      <a-entity
-        gltf-model="#space"
-        scale="200 200 200"
-        position="-200 0 200"
-      ></a-entity>
+      <a-entity gltf-model="#platform" position="25 0 0"></a-entity>
+      <a-entity gltf-model="#platform" position="50 0 0"></a-entity>
+      <a-entity gltf-model="#platform" position="75 0 0"></a-entity>
+      <a-entity gltf-model="#platform" position="100 0 0"></a-entity>
     </a-scene>
   </body>
 </html>
